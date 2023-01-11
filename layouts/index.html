@@ -54,7 +54,9 @@
           <div class="feature-image"><img width="100" height="100" alt="{{ .Title }} logo"
               src="{{ .image | relURL }}" /></div>
           {{ end }}
-          <h2 class="feature-title">{{ .title }}</h2>
+          <a href="{{ .href | relURL }}">
+            <h2 class="feature-title">{{ .title }}</h2>
+          </a>
           <div class="feature-content">
             <p>{{ .description }}</p>
           </div>
